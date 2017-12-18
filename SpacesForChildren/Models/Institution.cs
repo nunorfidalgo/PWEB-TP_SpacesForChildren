@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNet.Identity.EntityFramework;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -7,7 +8,7 @@ using System.Web;
 
 namespace SpacesForChildren.Models.Database
 {
-    [Table("Institution")]
+    [Table("Institutions")]
     public partial class Institution
     {
         public int InstitutionId { get; set; }
@@ -34,5 +35,6 @@ namespace SpacesForChildren.Models.Database
         public InstitutionType? InstitutionType { get; set; }
 
         public virtual ICollection<Service> Services { get; set; }
+        public virtual ICollection<IdentityUser> IdentityUsers { get; set; }
     }
 }

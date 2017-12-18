@@ -5,14 +5,14 @@ namespace SpacesForChildren.Migrations
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<SpacesForChildren.Models.Database.DatabaseContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<SpacesForChildren.Models.ApplicationDbContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
         }
 
-        protected override void Seed(SpacesForChildren.Models.Database.DatabaseContext context)
+        protected override void Seed(SpacesForChildren.Models.ApplicationDbContext context)
         {
             //  This method will be called after migrating to the latest version.
 

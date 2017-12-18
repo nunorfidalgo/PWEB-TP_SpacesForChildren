@@ -195,29 +195,28 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201712130245319_InitialDataBase.cs" />
-    <Compile Include="Migrations\201712130245319_InitialDataBase.Designer.cs">
-      <DependentUpon>201712130245319_InitialDataBase.cs</DependentUpon>
+    <Compile Include="Migrations\201712180548494_InitDatabase.cs" />
+    <Compile Include="Migrations\201712180548494_InitDatabase.Designer.cs">
+      <DependentUpon>201712180548494_InitDatabase.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\Database\Children.cs" />
-    <Compile Include="Models\Database\DatabaseContext.cs" />
-    <Compile Include="Models\Database\Evaluation.cs" />
-    <Compile Include="Models\Database\Institution.cs" />
-    <Compile Include="Models\Database\InstitutionType.cs" />
-    <Compile Include="Models\Database\Service.cs" />
-    <Compile Include="Models\Database\User.cs" />
-    <Compile Include="Models\Database\UserType.cs" />
+    <Compile Include="Models\ApplicationDbContext.Views.cs" />
+    <Compile Include="Models\Students.cs" />
+    <Compile Include="Models\DatabaseContext.cs" />
+    <Compile Include="Models\Evaluation.cs" />
+    <Compile Include="Models\Institution.cs" />
+    <Compile Include="Models\InstitutionType.cs" />
+    <Compile Include="Models\Service.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\aspnet-SpacesForChildren-20171212033739.mdf" />
-    <Content Include="App_Data\aspnet-SpacesForChildren-20171212033739_log.ldf">
-      <DependentUpon>aspnet-SpacesForChildren-20171212033739.mdf</DependentUpon>
+    <Content Include="App_Data\SpacesForChildren.mdf" />
+    <Content Include="App_Data\SpacesForChildren_log.ldf">
+      <DependentUpon>SpacesForChildren.mdf</DependentUpon>
     </Content>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
@@ -291,8 +290,8 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201712130245319_InitialDataBase.resx">
-      <DependentUpon>201712130245319_InitialDataBase.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201712180548494_InitDatabase.resx">
+      <DependentUpon>201712180548494_InitDatabase.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

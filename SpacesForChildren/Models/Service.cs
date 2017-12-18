@@ -7,7 +7,7 @@ using System.Web;
 
 namespace SpacesForChildren.Models.Database
 {
-    [Table("Service")]
+    [Table("Services")]
     public partial class Service
     {
         public int ServiceId { get; set; }
@@ -37,6 +37,6 @@ namespace SpacesForChildren.Models.Database
         public DateTime? RegistryDateTime { get; set; }
 
         public virtual ICollection<Evaluation> Evaluations { get; set; }
-        public virtual ICollection<Children> Childrens { get; set; }
+        public virtual ICollection<Student> Student { get; set; }
     }
 }
